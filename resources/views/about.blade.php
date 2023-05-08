@@ -10,10 +10,12 @@
 </head>
 <body>
   <header>
-    <nav style="display: flex; justify-content: space-between; align-items: center;">
-      <div class="nav-left">Logo</div>
+    <nav>
+      <div class="nav-left">
+        <a href="{{route('home')}}"><img src="{{ asset('imgs/logo.png') }}" alt="logo"></a>
+      </div>
       <div class="nav-right">
-        <ul style="display: flex; gap: 2em; list-style-type: none;">
+        <ul>
           <li><a href="{{route('home')}}">Home</a></li>
           <li><a href="{{route('about')}}">About Us</a></li>
           <li><a href="{{route('contact')}}">Contact Us</a></li>

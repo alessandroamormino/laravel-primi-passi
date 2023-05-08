@@ -12,7 +12,9 @@
 
   <header>
     <nav>
-      <div class="nav-left">Logo</div>
+      <div class="nav-left">
+        <a href="{{route('home')}}"><img src="{{ asset('imgs/logo.png') }}" alt="logo"></a>
+      </div>
       <div class="nav-right">
         <ul>
           <li><a href="{{route('home')}}">Home</a></li>
