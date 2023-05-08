@@ -1,3 +1,51 @@
-h1{
-  color: red;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+/* Reset */
+
+body{
+  color: white;
+  background-color: #232323;
+  font-family: sans-serif;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex */
+  background-color: #212121;
+  padding: 0 2em;
+  height: 80px;
+}
+
+nav .nav-right ul {
+  display: flex;
+  gap: 2em;
+  /* flex */
+  list-style-type: none;
+}
+
+nav .nav-right ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav .nav-right ul li a:hover{
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px);
+  /* flex */
+  max-width: 1200px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+

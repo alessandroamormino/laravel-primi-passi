@@ -11,13 +11,10 @@
 <body>
 
   <header>
-    <nav style="display: flex; justify-content: space-between; align-items: center;">
+    <nav>
       <div class="nav-left">Logo</div>
       <div class="nav-right">
-        <ul style="display: flex; gap: 2em; list-style-type: none;">
-          {{-- @foreach($navLinks as $link)
-            <li><a href="{{ route() }}">{{$link}}</a></li>
-          @endforeach --}}
+        <ul>
           <li><a href="{{route('home')}}">Home</a></li>
           <li><a href="{{route('about')}}">About Us</a></li>
           <li><a href="{{route('contact')}}">Contact Us</a></li>

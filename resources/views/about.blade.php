@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Laravel - About Us</title>
+  {{-- css --}}
+  <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 <body>
   <header>
@@ -21,7 +23,7 @@
   </header>
 
   <main>
-    <h1>{{$name}}</h1>
+    <h1>{{$name}} Page</h1>
   </main>
 </body>
 </html>
