@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+
+    // Inizializzo delle variabili da mandare alla Homepage
+    $hello = 'Hello World!';
+
+    return view('home', compact('hello'));
 });

@@ -7,6 +7,8 @@
   <title>Laravel First Steps</title>
 </head>
 <body>
-  <h1>Hello World!</h1>
+  {{-- Stampo Hello World con variabile passata dalla route--}}
+  <h1>{{$hello}}</h1>
+
 </body>
 </html>
