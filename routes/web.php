@@ -25,7 +25,7 @@ Route::get('/', function () {
     ];
     
     return view('home', compact('hello', 'navLinks'));
-});
+})->name('home');
 
 Route::get('/home', function () {
 
@@ -39,20 +39,20 @@ Route::get('/home', function () {
     ];
     
     return view('home', compact('hello', 'navLinks'));
-});
+})->name('home');
 
 Route::get('/about', function(){
     $name = 'About Us';
 
 
     return view('about', compact('name'));
-});
+})->name('about');
 
 Route::get('/contact', function(){
     $name = 'Contact Us';
 
 
     return view('contact', compact('name'));
-});
+})->name('contact');
 
 
