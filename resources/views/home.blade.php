@@ -10,5 +10,11 @@
   {{-- Stampo Hello World con variabile passata dalla route--}}
   <h1>{{$hello}}</h1>
 
+  <ul>
+    @foreach($names as $name)
+      <li>{{$name}}</li>
+    @endforeach
+  </ul>
+
 </body>
 </html>
