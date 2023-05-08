@@ -18,15 +18,41 @@ Route::get('/', function () {
     // Inizializzo delle variabili da mandare alla Homepage
     $hello = 'Hello World!';
 
-    $names = [
-        'Alessandro',
-        'Marco',
-        'Mario',
-        'Luigi',
-        'Luca'
+    $navLinks = [
+        'Home',
+        'About Us',
+        'Contact Us'        
     ];
+    
+    return view('home', compact('hello', 'navLinks'));
+});
 
-    return view('home', compact('hello', 'names'));
+Route::get('/home', function () {
+
+    // Inizializzo delle variabili da mandare alla Homepage
+    $hello = 'Hello World!';
+
+    $navLinks = [
+        'Home',
+        'About Us',
+        'Contact Us'        
+    ];
+    
+    return view('home', compact('hello', 'navLinks'));
+});
+
+Route::get('/about', function(){
+    $name = 'About Us';
+
+
+    return view('about', compact('name'));
+});
+
+Route::get('/contact', function(){
+    $name = 'Contact Us';
+
+
+    return view('contact', compact('name'));
 });
 
 
