@@ -39,6 +39,7 @@ nav .nav-right ul {
 nav .nav-right ul li a {
   color: white;
   text-decoration: none;
+  text-transform: capitalize;
 }
 
 nav .nav-right ul li a:hover{

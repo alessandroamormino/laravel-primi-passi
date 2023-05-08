@@ -17,14 +17,8 @@ Route::get('/', function () {
 
     // Inizializzo delle variabili da mandare alla Homepage
     $hello = 'Hello World!';
-
-    $navLinks = [
-        'Home',
-        'About Us',
-        'Contact Us'        
-    ];
     
-    return view('home', compact('hello', 'navLinks'));
+    return view('home', compact('hello'));
 })->name('home');
 
 Route::get('/home', function () {
@@ -32,27 +26,37 @@ Route::get('/home', function () {
     // Inizializzo delle variabili da mandare alla Homepage
     $hello = 'Hello World!';
 
-    $navLinks = [
-        'Home',
-        'About Us',
-        'Contact Us'        
+    $routesNames = [
+        'home',
+        'about',
+        'contact'
     ];
     
-    return view('home', compact('hello', 'navLinks'));
+    return view('home', compact('hello', 'routesNames'));
 })->name('home');
 
 Route::get('/about', function(){
     $name = 'About Us';
 
+    $routesNames = [
+        'home',
+        'about',
+        'contact'
+    ];
 
-    return view('about', compact('name'));
+    return view('about', compact('name', 'routesNames'));
 })->name('about');
 
 Route::get('/contact', function(){
     $name = 'Contact Us';
 
+    $routesNames = [
+        'home',
+        'about',
+        'contact'
+    ];
 
-    return view('contact', compact('name'));
+    return view('contact', compact('name', 'routesNames'));
 })->name('contact');
 
 
